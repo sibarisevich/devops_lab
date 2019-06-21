@@ -1,5 +1,5 @@
 #! /bin/bash python
-print ("Input robot path")
+print("Input robot path")
 robopath = input()
 U = D = R = L = 0
 U = robopath.count("u")
