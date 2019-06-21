@@ -11,4 +11,4 @@ while i < n:
 	i = i+1
 	res = res*i
 
-print ("N!=", res)
+print("N!=", res)

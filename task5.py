@@ -6,7 +6,7 @@ U = robopath.count("u")
 D = robopath.count("d")
 R = robopath.count("r")
 L = robopath.count("l")
-if (U - D == 0) & (R - L == 0):
-    print ("true")
+if(U - D == 0) & (R - L == 0):
+    print("true")
 else:
-    print ("folse")
+    print("folse")

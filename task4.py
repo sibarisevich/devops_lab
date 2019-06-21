@@ -1,5 +1,5 @@
 #! /bin/bash python
-print ("Input size")
+print("Input size")
 size = input()
 height = int(size.partition(" ")[0])
 width = int(size.partition(" ")[2])
