@@ -8,7 +8,7 @@ i = 1
 res = 1
 
 while i < n:
-    i = i+1
-    res = res*i
+    i = i + 1
+    res = res * i
 
 print("N!=", res)

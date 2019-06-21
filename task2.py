@@ -8,7 +8,7 @@ print("please,	insert keewords:")
 kee.append(input())
 
 while inp != "no":
-    print ("Do you wont input another kee? (sey no fo exit)")
+    print("Do you wont input another kee? (sey no fo exit)")
     inp = input()
     if inp == "no":
         break
@@ -30,10 +30,12 @@ while inp != "no":
     else:
         Val.append(inp)
 
+
 def splitfn(key, volume=None):
     """function for join 2 tables"""
     join[key] = volume
     return join
+
 
 for i in range(len(kee)):
     if i < len(Val):
