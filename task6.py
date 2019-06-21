@@ -2,7 +2,7 @@
 
 m = set(input())
 temp = str(input())
-m = set(map(int,temp.split()))
+m = set(map(int, temp.split()))
 
 n = set(input())
 temp = str(input())
