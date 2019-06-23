@@ -4,10 +4,12 @@
 
 
 #The app's parameters
+
 For confifure system monitor use /monitor/config.ini
 ● type - type of report format. Can be json or txt.
 ● time - how often will doing snapshons. Specify in minutes.
 ● count - how many snapshots will be taken by the application. For infinitely choose 0.
 
 #HowToUse
+
 Jast start application from /monitor folder
