@@ -10,6 +10,5 @@ setup(
     description="app for monitoring system info",
     license="MIT",
     install_requires=['psutil==5.6.3'],
-    package_data={'monitor': ['config.ini'],},
-    include_package_data=True
-    )
+    package_data={'monitor': ['config.ini'], },
+    include_package_data=True)
