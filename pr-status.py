@@ -3,7 +3,7 @@ import requests
 import datetime
 import argparse
 
-arg= argparse.ArgumentParser()
+arg = argparse.ArgumentParser()
 arg.add_argument("--user", help="insert github username")
 arg.add_argument("--repo", help="insert gthub repository")
 arg.add_argument("--pull", help="insert number of github pull-request")
@@ -11,20 +11,20 @@ arg.add_argument("--version", help="output version the app")
 
 arg = arg.parse_args()
 
-token = '5bab07c808f13d15751256338fccfa3a1332e8b7'
+token = 'b7072c062da46396a8f7bf1aefe1d695f33f5bcd'
 login = 'sibarisevich'
 
-if arg.user == None:
+if arg.user is None:
     accaunt = 'alenaPy'
 else:
     accaunt = arg.user
 
-if arg.repo == None:
+if arg.repo is None:
     repo = 'devops_lab'
 else:
-    repo = arg.repo 
+    repo = arg.repo
 
-if arg.pull == None:
+if arg.pull is None:
     numberpull = '62'
 else:
     numberpull = arg.pull
@@ -45,9 +45,9 @@ deliteline = m['deletions']
 d1 = datetime.datetime.strptime(create, "%Y-%m-%dT%H:%M:%SZ")
 daysopened = datetime.datetime.now() - d1
 
-print(" data obnovleniya: ", update, "\n", \
-	"den sozdaniya: ", create[8:10], "\n", \
-	"dobavleno strok: ", addline, "\n", \
-	"udaleno strok: ", deliteline, "\n", \
-	"sozdatel: ", usercreated, "\n", \
-	"dney s sozdaniya: ", daysopened.days)
+print(" data obnovleniya: ", update, "\n",\
+"den sozdaniya: ", create[8:10], "\n",\
+"dobavleno strok: ", addline, "\n",\
+"udaleno strok: ", deliteline, "\n",\
+"sozdatel: ", usercreated, "\n",\
+"dney s sozdaniya: ", daysopened.days)
