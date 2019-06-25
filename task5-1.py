@@ -28,14 +28,14 @@ def jsonfile():
 
 def yamlfile():
     p = dict(
-        Version=str(sys.version[:5]),
-        Virtual_environment=str(sys.prefix),
-        python_executable_location=str(sys.executable),
-        Pip_location="12",
-        Python_path=sys.prefix,
-        Installed_packages_name_version=pakage)
+        Version = sys.version[:5],
+        Virtual_environment = sys.prefix,
+        python_executable_location = sys.executable,
+        Pip_location = os.popen('which pip').read()[:-1],
+        Python_path = sys.base_prefix,
+        Installed_packages_name_version = pakage)
     with open('data.yml', 'w') as outfile:
-        yaml.dump(p, outfile, default_flow_style=False)
+        yaml.dump(p, outfile, default_flow_style = False)
 
 
 jsonfile()
