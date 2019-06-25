@@ -11,7 +11,7 @@ arg.add_argument("--version", help="output version the app")
 
 arg = arg.parse_args()
 
-token = 'b7072c062da46396a8f7bf1aefe1d695f33f5bcd'
+token = 'ba1dd0090b23c0b96d161a424fc8da24caa058d5'
 login = 'sibarisevich'
 
 if arg.user is None:
@@ -38,16 +38,16 @@ r = requests.get(link, auth=(login, token))
 
 m = r.json()
 update = m['updated_at']
-create= m['created_at']
+create = m['created_at']
 addline = m['additions']
 usercreated = m['user']['login']
 deliteline = m['deletions']
 d1 = datetime.datetime.strptime(create, "%Y-%m-%dT%H:%M:%SZ")
 daysopened = datetime.datetime.now() - d1
 
-print(" data obnovleniya: ", update, "\n",\
-"den sozdaniya: ", create[8:10], "\n",\
-"dobavleno strok: ", addline, "\n",\
-"udaleno strok: ", deliteline, "\n",\
-"sozdatel: ", usercreated, "\n",\
-"dney s sozdaniya: ", daysopened.days)
+print(" data obnovleniya: ", update)
+print("den sozdaniya: ", create[8:10])
+print("dobavleno strok: ", addline)
+print("udaleno strok: ", deliteline)
+print("sozdatel: ", usercreated)
+print("dney s sozdaniya: ", daysopened.days)
