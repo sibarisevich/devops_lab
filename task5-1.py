@@ -1,7 +1,6 @@
 #!/usr/bin/bash python
 import sys
 import os
-import subprocess
 import json
 from pip._internal.operations.freeze import freeze
 import yaml
