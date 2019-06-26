@@ -1,0 +1,14 @@
+servername: example.ru
+documentroot: /bin/bash
+serveradmin: abs
+directorypath: /usr/bin/user
+
+apache_vhosts:
+- servername: yandex.ru
+  documentroot: /bin/bash
+  serveradmin: abs
+  directorypath: /usr/bin/user
+
+apache_not_vhosts:
+- servername: mail.ru
+  documentroot: /home/user
