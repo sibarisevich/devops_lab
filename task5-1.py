@@ -34,7 +34,7 @@ def yamlfile():
         Pip_location = os.popen('which pip').read()[:-1],
         Python_path = sys.base_prefix,
         Installed_packages_name_version = pakage)
-    with open('data.yml', 'w') as outfile:
+    with open('report.yml', 'w') as outfile:
         yaml.dump(p, outfile, default_flow_style = False)
 
 
