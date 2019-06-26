@@ -20,8 +20,7 @@ def jsonfile():
         "python executable location": sys.executable,
         "Pip location": os.popen('which pip').read()[:-1],
         "Python path": sys.base_prefix,
-        "Installed packages: name, version": str(pakage)
-                    }, indent=4)
+        "Installed packages: name, version": str(pakage)}, indent=4)
     file.write(p)
     file.close()
 
