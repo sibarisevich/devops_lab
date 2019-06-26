@@ -12,9 +12,11 @@ class first:
     def network():
         tmp = psutil.net_io_counters().bytes_sent
         return (tmp)
+
     def vmemory():
         tmp = psutil.virtual_memory().total
         return (tmp)
+
     def swap():
         tmp = psutil.swap_memory().used
         return (tmp)
