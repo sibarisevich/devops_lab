@@ -26,4 +26,4 @@ while i < student:
 
 nameinp = str(input('Input name: '))
 
-print("sredniy ball", result(base, nameinp))
+print("average mark", result(base, nameinp))

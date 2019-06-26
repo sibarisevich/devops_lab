@@ -4,11 +4,11 @@ join = {}
 kee = []
 inp = "yes"
 
-print("please,	insert keewords:")
+print("please,	insert keywords:")
 kee.append(input())
 
 while inp != "no":
-    print("Do you wont input another kee? (sey no fo exit)")
+    print("Do you want input another kee? (sey no fo exit)")
     inp = input()
     if inp == "no":
         break

@@ -10,6 +10,7 @@ def gorobotgo(robopath):
     else:
         return False
 
+
 if __name__ == "__main__":
     robopath = input("Input robot path: ")
     print(gorobotgo(robopath))
