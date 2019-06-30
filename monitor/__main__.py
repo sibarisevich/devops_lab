@@ -5,7 +5,7 @@ from datetime import datetime
 import time
 import configparser
 import json
-
+import os
 
 class first:
     """return information about natwork and mamory"""
@@ -25,7 +25,7 @@ class first:
 i = n = 0
 
 config = configparser.ConfigParser()
-config.read("config.ini")
+config.read(os.path.join(os.path.abspath(os.path.dirname(__file__)), "config.ini"))
 timetosleep = int(config.get("settings", "time"))
 reportformat = config.get("settings", "type")
 count = int(config.get("settings", "count"))

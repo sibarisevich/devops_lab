@@ -10,6 +10,11 @@ For confifure system monitor use /monitor/config.ini
 ● time - how often will doing snapshons. Specify in minutes.
 ● count - how many snapshots will be taken by the application. For infinitely choose 0.
 
+#HowToInstall
+
+for installetion module insert: pip install /path/to/wheel/file
+
+
 #HowToUse
 
-Jast start application from /monitor folder
+For start upplication jast incert command: python monitor
