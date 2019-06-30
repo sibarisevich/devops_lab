@@ -7,6 +7,7 @@ import configparser
 import json
 import os
 
+
 class first:
     """return information about natwork and mamory"""
     def network():
