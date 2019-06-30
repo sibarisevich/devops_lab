@@ -17,16 +17,16 @@ arg.add_argument('-dc', help='output day of created pull request', action="store
 arg.add_argument('-il', help='output number of inserted line(s)', action="store_true")
 arg.add_argument('-dl', help='output number of delete line(s)', action="store_true")
 arg.add_argument('-cr', help='output creator pull request', action="store_true")
-arg.add_argument('-dfc', help='output number of day after created pull request', action="store_true")
+arg.add_argument('-dfc', help='output number of day after created request', action="store_true")
 
 arg = arg.parse_args()
 
 token = login = ''
 
-if arg.login != None:
+if arg.login is not None:
     login = arg.login
 
-if arg.token != None:
+if arg.token is not None:
     token = arg.token
 
 if arg.user is None:
